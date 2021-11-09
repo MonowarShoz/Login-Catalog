@@ -27,7 +27,7 @@ class ButtonWidget extends StatelessWidget {
                   color: shadow,
                   blurRadius: 10.0, // has the effect of softening the shadow
                   spreadRadius: 1.0, // has the effect of extending the shadow
-                  offset: Offset(
+                  offset:const Offset(
                     0.0, // horizontal, move right 10
                     5.0, // vertical, move down 10
                   ),
@@ -38,14 +38,14 @@ class ButtonWidget extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 primary: color,
                 shape: RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(50.0),
+                  borderRadius:  BorderRadius.circular(50.0),
                 ),
               ),
               onPressed: () {},
               child: Text(
                 text,
                 style:
-                    TextStyle(fontSize: 20, color: UIHelper.SPOTIFY_TEXT_COLOR),
+                   const TextStyle(fontSize: 20, color: UIHelper.SPOTIFY_TEXT_COLOR),
               ),
             ),
           ),
